@@ -23,7 +23,7 @@ export default function Page(){
                 {
                     basket.map((item) => {
                         return(
-                            <div class='flex justify-between bg-white border-y-2'>
+                            <div class='flex justify-between bg-white border-y-2' key={Math.random()}>
                                 <img src={item.urlPhoto} class='w-[100px] h-[100px] bg-center bg-cover'></img>
                                 <div class='flex flex-col justify-between py-2'>
                                     <div class='text-2xl text-right'>{item.name}</div>

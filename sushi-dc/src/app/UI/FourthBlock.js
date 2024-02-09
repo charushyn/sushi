@@ -11,7 +11,7 @@ export default function FourthBlock(){
                 <div class='text-white'>
                     <div class='flex flex-col gap-y-4 mt-4'>
                         <div class='font-Asia text-4xl'>California sushi set</div>
-                        <div class=''>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard</div>
+                        <div class=''>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard</div>
                     </div>
                     <button class='h-fit w-fit p-4 border-[1px] absolute bottom-4'>Смотреть</button>
                 </div>

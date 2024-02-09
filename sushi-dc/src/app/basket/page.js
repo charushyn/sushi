@@ -23,7 +23,7 @@ export default function Page(){
             <hr></hr>
             <div class='flex flex-col gap-2'>{basket.length > 0 ? basket.map((item) => {
             return(
-                <div class='flex justify-between'>
+                <div class='flex justify-between' key={Math.random()}>
                     <div class='bg-sushi-pos-1 w-[100px] h-[100px] bg-center bg-cover'></div>
                     <div class='flex flex-col justify-between'>
                         <div class='text-2xl'>{item.name}</div>
