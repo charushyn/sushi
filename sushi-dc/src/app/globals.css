@@ -1,0 +1,122 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+@font-face {
+  font-family: 'Asia';
+  src: url("./fonts/AsiaSushiBold-gx3PP.otf");
+}
+
+@font-face {
+  font-family: 'Nunito-Sans';
+  src: url("./fonts/Nunito-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: 'Nunito-Italic';
+  src: url("./fonts/Nunito-Italic-VariableFont_wght.ttf");
+}
+
+body {
+  background-size: 100px 100px;
+  background-image:
+    linear-gradient(to right, grey 0.5px, transparent 0.5px),
+    linear-gradient(to bottom, grey 0.5px, transparent 0.5px);
+}
+
+.button {
+  display: inline-block;
+  position: relative;
+  font-family: 'Nunito-Sans';
+  color: #000000;
+  border: 1px solid black;
+  background: #ffffff;
+  font-size: 26px;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+  user-select: none;
+  transition: all 0.2s ease-out;
+  overflow: hidden;
+  cursor: pointer;
+  width: 130px;
+  height: 130px;
+  padding-top: 36px;
+}
+
+.button:hover {
+  color: #ffffff;
+  background-color: #b91c1c;
+  border-color: #000000;
+}
+
+.button span::after {
+  content: attr(data-text);
+  position: absolute;
+  left: 130%;
+  width: 100%;
+  text-align: center;
+  bottom: 0px;
+}
+
+.button .button_inner {
+  animation: marqueeAnim 2.5s linear infinite;
+  animation-play-state: running;
+}
+
+/* Let's create animation */
+@keyframes marqueeAnim {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-130%);
+  }
+}
+
+.video-sushi-bg{
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+/* flex flex-row w-full h-[70px] sticky top-0 z-40 bg-white justify-center gap-2 px-4 */
+
+.alert-box {
+  animation: fadeIn 0.5s;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 60px;
+  position: sticky;
+  top: 0px;
+  z-index: 40;
+  background-color: white;
+  justify-content: center;
+  gap: 2px;
+  padding: 15px 0 0 0;
+  border-bottom: 0.5px solid black;
+}
+
+
+
