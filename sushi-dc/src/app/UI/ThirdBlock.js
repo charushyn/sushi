@@ -1,3 +1,6 @@
+'use client'
+
+import { Link } from 'react-scroll';
 
 
 export default function ThirdBlock(){
@@ -15,7 +18,7 @@ export default function ThirdBlock(){
                         <div class='font-Asia text-4xl'>California sushi set</div>
                         <div class=''>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard</div>
                     </div>
-                    <button class='h-fit w-fit p-4 border-[1px] absolute bottom-4'>Смотреть</button>
+                    <Link class='h-fit w-fit p-4 border-[1px] absolute bottom-4 z-20' to='FifthBlock' duration={500} smooth={true}>Смотреть</Link>
                 </div>
             </div>
             <video src={(require('../images/sushi-bg.mp4'))} autoPlay loop muted className='video-sushi-bg'></video>

@@ -118,5 +118,19 @@ body {
   border-bottom: 0.5px solid black;
 }
 
+.leaflet-container{
+  height: 200px;
+  z-index: 0;
+}
+
+.span-form{
+  color: red;
+  display: none;
+}
+
+input:invalid[focused="true"] ~ span{
+  display: block;
+}
+
 
 

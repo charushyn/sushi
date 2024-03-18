@@ -11,7 +11,7 @@ export default function FifthBlock(){
     const basket = useSelector((state) => state.basketReducer.items)
 
     return(
-        <div class='h-fit py-2 px-2 font-NunitoSans flex flex-col gap-y-4'>
+        <div class='h-fit py-2 px-2 font-NunitoSans flex flex-col gap-y-4' id="FifthBlock">
                     <div class='flex flex-col mx-auto bg-white border-[1px] border-gray-400 w-[250px]'>
                         <img src="https://static.vecteezy.com/system/resources/previews/025/064/113/non_2x/sushi-with-ai-generated-free-png.png" class={`h-[250px] bg-center bg-cover`}></img>
                         <div class='p-2 flex flex-col gap-4'>
